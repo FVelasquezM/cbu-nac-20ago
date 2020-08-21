@@ -1,0 +1,106 @@
+/* from: https://davidwalsh.name/css-flip  */
+
+  
+    /* flip the pane when hovered */
+    .flipper.flip .card {
+      transform: rotateY(180deg);
+    }
+    .front,
+    .back {
+      width: 100%;
+      padding: 5px;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .card {
+      width: 100%;
+      height: 30em;
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    /* front pane, placed above back */
+    .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+    }
+    /* back, initially hidden pane */
+    .back {
+      transform: rotateY(180deg);
+      height: 100%;
+    }
+    .goback {
+      position: absolute;
+      bottom: 0px;
+      padding-left: 20px;
+      left: 0px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .titulo {
+      text-align: center;
+      margin-top: 0.8em;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .subtitulo {
+      margin-top: 1em;
+      text-align: center;
+      font-family: 'Karla', sans-serif;
+    }
+    .left-align {
+      text-align: left;
+    }
+    .def-title {
+      
+      /*color: #999999;*/
+      color: white;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .def {
+      /*color: #666666;*/
+      color: white;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .card-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .main{
+      background-color: #C7F0BD;
+    }
+
+    .card-color-1 {
+      background-color: #607744;
+      height: 30em;
+    }
+
+    .card-color-2 {
+      background-color: #34623f;
+      height: 30em;
+    }
+
+
+    .subtitulo-left {
+      margin-top: 1em;
+      text-align: left;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .subtitulo-right {
+      margin-top: 1em;
+      text-align: right;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .subtitulo-small {
+      text-align: center;
+      font-family: 'Karla', sans-serif;
+      font-size: 0.8em;
+    }
